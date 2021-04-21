@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Grundfos Kollegiet tilbyder dig trygge rammer i det centrale Aarhus.">
+  <meta name="keywords" content="Grundfos Kollegiet, Kollegie, Navitas, Kollegie Aarhus, Billigt Kollegie Aarhus, Kollegiet i Aarhus C">
+
+  <!-- Main stylesheet-->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Grundfos Kollegiet</title>
+
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Scroll Magic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+  <!-- Gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/MotionPathPlugin.min.js"></script>
+
+  <!-- Full Calendar io -->
+  <link href='fullcalendar/main.css' rel='stylesheet' />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Fade -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+
+<header class="header">
+  <nav class="main-nav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="/img/logofull.png" alt="logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="hide">Hjem</a></li>
+      <li><a href="livet.html">Livet på <br>Grundfos</a></li>
+      <li><a href="tekno.html">Grøn <br>Teknologi</a></li>
+      <li><a href="havnen.html">Havnen som<br> baghave</a></li>
+      <li><a href="#hero" class="hide">Log ind</a></li>
+    </ul>
+    <div class="login hide-login">
+      <span class="login-wrapper"></span>
+      <span class="login-content"><span>
+        </span><a href="error.html">Log ind</a></span>
+    </div>
+    
+    <div class="burger">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<section class="introduction">
+
+  <div class="hero-computer">
+    <img src="/img/herocomputer.jpg" alt="Grundfos Kollegiet">
+    <div id="hero" class="hero-computer-text">Velkommen</div>
+
+  </div>
+  <div class="background">
+
+
+    <div class="skyer">
+      <img id="heroskyer" src="/img/heroskyermain1.png" alt="Skyer over Grundfos Kollegiet">
+    </div>
+    <div class="bygning">
+      <img id="herobygning" src="/img/herobygninger.png" alt="Grundfos Kollegiet">
+    </div>
+  </div>
+</section>
+
+
+<section class="login-form">
+  <h2>Log ind</h2>
+  <form name="login">
+    <div class="brugernavn">
+
+      <label>BRUGERNAVN</label>
+      <input name="name" type="text">
+
+    </div>
+    <div class="password">
+
+      <label>KODEORD</label>
+      <input id="psw" type="password" name="pass">
+
+    </div>
+    <p>Ikke medlem? Opret en bruger <a href="error.html">her</a></p>
+    <div class="submit">
+      <input class="login-button" type="button" value="Login" style="width: 134px; margin: 4px auto 4px auto;"
+        onclick="javascript:TheLogin(this.form);">
+    </div>
+  </form>
+</section>
+
+<div  class="main-container">
+  <div class="card">
+
+    <a href="havnen.html">
+      <div  class="second-container">
+        <img class="img-1" src="img/havn.png" alt="Grøntsage i kurv">
+        <h4><b>Havnen som baghave</b></h4>
+      </div>
+    </a>
+
+    <a href="tekno.html">
+      <div class="second-container">
+        <img class="img-1" src="img/pumpe.png" alt="Pizza med tomat, mozzarella og trøffelolie">
+        <h4><b>Grøn <br>teknologi</b></h4>
+      </div>
+    </a>
+
+    <a href="livet.html">
+      <div class="second-container">
+        <img class="img-1" src="img/venner.png" alt="Salad med tomat, trøffelolie og pesto">
+        <h4><b>Livet på <br>kollegiet</b></h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <section>
+      <h5>Kontakt os</h5>
+      <p>
+        <a>Email:</a><br>
+        <a>gkbeboerraad@gmail.com</a><br>
+        <br>
+        <a>Telefon</a><br>
+        <a>+45 12 34 56 78</a><br><br>
+        <a title="Facebook" href="https://www.facebook.com/loegismose/" target="_blank"><i
+            class="fab fa-facebook-square"></i></a>
+        <a title="Instgram" href="https://www.instagram.com/loegismose/" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+      </p>
+    </section>
+
+    <section>
+      <h5>Find os her</h5>
+      <address>
+        <div class="maps-container">
+          <iframe id="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71191.57622355585!2d10.128996373352031!3d56.10977303150841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3ffc614fffff%3A0xc3abf79c9ccbfef9!2sGrundfos%20Kollegiet!5e0!3m2!1sda!2sdk!4v1618827375967!5m2!1sda!2sdk"
+            width="300" height="275" style="border:0;" allowfullscreen=""></iframe><br>
+        </div>
+      </address>
+    </section>
+  </div>
+</footer>
+
+<!-- Initialise fade -->
+<script src="js/aos.js"></script>
+<!-- Javascript-->
+<script src="/script/script.js"></script>
+</body>
+
+</html>

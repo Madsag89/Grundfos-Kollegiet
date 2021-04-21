@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Havnen som baghave</title>
+    <meta name="description" content="Grundfos kollegiet er omgivet af uddannelsesinstitutioner, hvor blandt andet Navitas ligger blot et spytklat derfra. Desuden kan du nemt komme til Aarhus Universitet, VIA University College og Erhvervsakademi - både på cykel og med diverse busforbindelser.">
+    <meta name="keywords" content="Grundfos Kollegiet, Kollegie, Kollegie Aarhus, Kollegie Aarhus C, Navitas, Aarhus C">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/img/logofull.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="hide">Hjem</a></li>
+          <li>
+            <a href="livet.html">Livet på <br />Grundfos</a>
+          </li>
+          <li>
+            <a href="tekno.html">Grøn <br />Teknologi</a>
+          </li>
+          <li>
+            <a href="havnen.html" class="current"
+              >Havnen som<br />
+              baghave</a
+            >
+          </li>
+          <li><a href="#" class="hide">Log ind</a></li>
+        </ul>
+        <div class="login hide-login">
+          <span class="login-wrapper"></span>
+          <span class="login-content"><span>
+            </span><a href="error.html">Log ind</a></span>
+        </div>
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex_underside">
+        <div class="hero_underside">
+          <h1>havnen som baghave</h1>
+          <img src="img/slidehavn1.jpg" alt="Kraner ved Aarhus Havn" />
+        </div>
+
+        <p>
+          Grundfos kollegiet er omgivet af uddannelsesinstitutioner, hvor blandt
+          andet Navitas ligger blot et spytklat derfra. Desuden kan du nemt
+          komme til Aarhus Universitet, VIA University College og
+          Erhvervsakademi - både på cykel og med diverse busforbindelser. <br />
+          <br />
+          Med de helt vidunderlige omgivelser, som Aarhus Ø byder på, kan man
+          aldrig kede sig. Du finder diverse caféer og restauranter, havnebadet
+          og spektakulære bygninger. Prikken over i’et er dog, at kollegiet er
+          omgivet af havudsigt, samtidig med at du er tæt på både centrum og
+          skov. Du får altså alt godt fra alle verdener med
+          <span class="livet">
+            havnen som baghave, skoven som nabo og Aarhus C som genbo.
+          </span>
+        </p>
+      </section>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="img/slidehavn2.jpg" alt="Navitas" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/slidehavn3.jpg" alt="Aarhus Å" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/slidehavn4.jpg" alt="Lejligheder i Aarhus Havn" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section>
+          <h5>Kontakt os</h5>
+          <p>
+            <a>Email:</a><br />
+            <a>gkbeboerraad@gmail.com</a><br />
+            <br />
+            <a>Telefon</a><br />
+            <a>+45 12 34 56 78</a><br /><br />
+            <a
+              title="Facebook"
+              href="https://www.facebook.com/loegismose/"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              title="Instgram"
+              href="https://www.instagram.com/loegismose/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </p>
+        </section>
+
+        <section>
+          <h5>Find os her</h5>
+          <address>
+            <div class="maps-container">
+              <iframe
+                id="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71191.57622355585!2d10.128996373352031!3d56.10977303150841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3ffc614fffff%3A0xc3abf79c9ccbfef9!2sGrundfos%20Kollegiet!5e0!3m2!1sda!2sdk!4v1618827375967!5m2!1sda!2sdk"
+                width="300"
+                height="275"
+                style="border: 0"
+                allowfullscreen=""
+              ></iframe
+              ><br />
+            </div>
+          </address>
+        </section>
+      </div>
+    </footer>
+    <!-- Initialise fade -->
+    <script src="js/aos.js"></script>
+    <!-- Javascript-->
+    <script src="/script/script.js"></script>
+  </body>
+</html>

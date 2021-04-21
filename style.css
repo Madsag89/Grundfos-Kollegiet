@@ -1,0 +1,1071 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: Grundfos;
+}
+
+@font-face {
+  font-family: Grundfos;
+  src: url(../fonts/Sansation_Regular.ttf)
+}
+
+@font-face {
+  font-family: Undertekst;
+  src: url(..//fonts/Sansation_Light.ttf)
+}
+
+/*---------------------------------------------------------
+                        NAV
+---------------------------------------------------------*/
+
+html, body{
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: rgba(70, 70, 70, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(95, 96, 110, 0.37);
+  backdrop-filter: blur( 8.0px );
+  -webkit-backdrop-filter: blur( 8.0px ) ;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  top: 0;
+  z-index: 999;
+  transition: all .5s;
+}
+
+header.active{
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: rgba(70, 70, 70, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(95, 96, 110, 0.37);
+  backdrop-filter: blur( 8.0px );
+  -webkit-backdrop-filter: blur( 8.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  top: 0;
+  z-index: 999;
+  transition: all .5s;
+}
+
+.main-nav {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav-links span{
+  text-decoration: #c6783a;
+}
+
+.nav-links li {
+  padding: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: rgb(117, 117, 117);
+  text-transform: uppercase;
+  transition: all .5s ease;
+}
+
+nav .current{
+  text-decoration: underline;
+}
+
+
+
+
+/*---------------------------------------------------------
+                       Logo
+---------------------------------------------------------*/
+.logo {
+  margin-left: 1em;
+  display: flex;
+}
+
+.logo a {
+  display: flex;
+  text-decoration: none;
+}
+
+.logo img {
+  max-height: 7vh;
+  margin-right: -5em;
+}
+
+.login {
+    display: flex;
+    margin-right: 1rem;
+
+}
+
+.login span{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    font-size: 14px;
+
+}
+
+.login-content{
+    background-color: #c6783a;
+    line-height: 1rem;
+    padding: 10px;
+}
+
+.hide-login{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+/*---------------------------------------------------------
+                        Burger
+---------------------------------------------------------*/
+
+.burger {
+  display: none;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.line {
+  height: 3px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: #c6783a;
+  transition: transform .5s ease, opacity .5s ease;
+}
+
+.main-nav.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+  transition: background-color 1.5s ease;
+  background-color: white;
+}
+
+.main-nav.show .line2 {
+  opacity: 0;
+  transition: background-color 1.5s ease;
+  background-color: white;
+}
+
+.main-nav.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+  transition: background-color 1.5s ease;
+  background-color: white;
+}
+
+.main-nav.show .nav-links {
+  transform: translateX(0%);
+}
+
+
+
+/*---------------------------------------------------------
+                        Baggrund - forside
+---------------------------------------------------------*/
+
+
+.skyer img{
+  position: absolute;
+  width: 100%;
+}
+
+
+.bygning img{
+  position: relative;
+  width: 100%;
+}
+
+
+.hero-computer{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-text{
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  opacity: 0;
+  animation: fadeUp 1.5s forwards; 
+  z-index: 999;
+
+}
+
+.hero-computer-text{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  opacity: 0;
+  animation: fadeUp 1.5s forwards; 
+
+}
+
+
+
+
+
+.hero-computer img{
+  display: none;
+}
+
+#calendar {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+
+
+
+
+/*---------------------------------------------------------
+                        Login form
+---------------------------------------------------------*/
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+}
+
+.login-form h2{
+  padding: 1rem;
+}
+
+.login-form p{
+  font-size: 10px;
+  margin-top: -15px;
+  color: #c6783a;
+  text-transform: uppercase;
+  
+}
+
+.login-from a{
+  text-decoration: none;
+}
+
+.login-from a:hover{
+  text-decoration: none;
+}
+
+label{
+  color: #c6783a;
+  font-size: 18px;
+  margin-right: 10px;
+
+}
+
+input[type=text], input[type=password] {
+  padding: 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.password{
+  margin-left: 32px;
+}
+
+.submit{
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.submit span{
+  text-align: center;
+}
+
+.login-button{
+  border: none;
+  background-color: #c6783a;
+  color: white;
+  font-size: 13px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  margin-top: 0px;
+}
+
+/*---------------------------------------------------------
+                       Tubolar
+---------------------------------------------------------*/
+
+#tubular-container{
+  width: 100px;
+}
+
+/*---------------------------------------------------------
+               Cards section - forside
+---------------------------------------------------------*/
+
+
+.card {
+  transition: 0.3s;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-container {
+  margin: 2rem;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.main-container h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.main-container h4 {
+  font-size: 30px;
+  padding: 1rem;
+  margin:0;
+  color: #c6783a;
+}
+
+.main-container a:link, a:visited{
+  text-decoration: none;
+}
+
+.main-container a:active{
+  text-decoration: underline;
+}
+
+
+.second-container:hover {
+  transform: scale(1.1);
+}
+
+.second-container {
+  transition: all .2s ease-in-out;
+  background: white;
+  margin: 20px 20px;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+}
+
+.img-1 {
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+
+/*---------------------------------------------------------
+                        Login landingpage
+---------------------------------------------------------*/
+
+.homepage{
+  width: 100%;
+}
+
+.homepage h1{
+  padding-top: 6rem;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.card-wrapper{
+  padding: 1rem 1rem 0rem 1rem;
+}
+.card-item{
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0 auto;
+  max-height: 250px;
+}
+
+.card-item img{
+  width: 100;
+  height: auto;
+}
+
+.card-item h3{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  text-shadow: 1px -1px 5px rgb(0, 0, 0);
+}
+
+#calendar{
+  margin-top: 80px;
+  padding: .5rem;
+}
+
+
+/*---------------------------------------------------------
+         Baghave, teknologi og kollegiet - forside
+---------------------------------------------------------*/
+
+.forside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.baghave{
+  background-image: url(../img/havn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+}
+
+
+.teknologi{
+  background-image: url(../img/pumpe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 4rem;
+}
+
+.Kollegiet{
+  background-image: url(../img/venner.png);
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+}
+
+.baghave, .teknologi, .Kollegiet h2{
+  padding: 1rem 0rem 0rem 0;
+}
+
+.forside p{
+  font-family: 'Undertekst' ;
+  font-size: 17px;
+}
+
+
+
+
+/*---------------------------------------------------------
+              Text styling articles
+---------------------------------------------------------*/
+
+p {
+  font-family: 'Undertekst';
+  color: #2a3743;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+h1 {
+  font-family: 'Grundfos';
+  color: #c6783a;
+  text-transform: uppercase;
+ 
+  text-align: center;
+}
+
+h2{
+  font-family: 'Grundfos';
+  color: #c6783a;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*---------------------------------------------------------
+         Havnen som baghave
+---------------------------------------------------------*/
+
+.flex_underside p {
+  font-family: 'Undertekst';
+  color: #2a3743;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.flex_underside h1 {
+  font-family: 'Grundfos';
+  color: #c6783a;
+  text-transform: uppercase;
+  padding: 40px;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.hero_underside img {
+  width: 100%;  
+}
+
+
+/*---------------------------------------------------------
+              Slideshow
+---------------------------------------------------------*/
+.slideshow-container {
+  max-width: 800px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /*CROP billeder*/
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #c6783a;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #c6783a;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*LIVET PÅ GRUNDFOS KOLLEGIET*/
+
+.liv_img {
+    width: 100%;
+}
+
+.livet {
+    color: #c6783a;
+    font-weight: 600;
+}
+
+
+/*---------------------------------------------------------
+                       Grøn teknologi
+---------------------------------------------------------*/
+
+
+.green {
+    color: rgb(0, 63, 0);
+    font-weight: 600;
+}
+
+
+/*---------------------------------------------------------
+                          Nyheder
+---------------------------------------------------------*/
+
+.nyheder_p {
+  background-color: #b2b6b9;
+  color: white;
+
+  margin: 0 auto;
+  max-width: 900px;
+ 
+}
+
+.container_ny {
+margin: 0 auto;
+position: relative;
+justify-content: center;
+flex-wrap: wrap;
+display: flex;
+flex-direction: column;
+background-color: white;
+}
+
+.flex_ny {
+margin: 10px;
+padding: 20px;
+border-bottom: 1px solid #b2b6b9; 
+justify-content: center;
+flex: 25%;
+max-width: 900px;
+margin:  0 auto ;
+}
+
+.flex_img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+padding: 6px;
+}
+
+.flex_ny h1 {
+  padding: 6px;
+  font-size: 18px;
+  color: #2a3743;
+}
+
+.flex_ny p {
+  padding: 4px;
+}
+
+.dato_ny {
+  font-size: 10px;
+  color: #b2b6b9;
+  font-weight: 600;
+  float: right;
+}
+
+.readolder {
+  padding: 5px;
+  background-color: #2a3743;
+  color: white;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Grundfos';
+}
+
+.readolder:hover {
+  background-color: #404f5e;
+}
+
+/*---------------------------------------------------------
+                          Second hand
+---------------------------------------------------------*/
+
+.second_intro {
+text-align: center;
+margin: 0 auto;
+padding-top: 5rem;
+}
+
+.second_intro h1 {
+font-family: 'Grundfos';
+color: #c6783a;
+padding: 4px;
+}
+
+.second_intro p {
+font-family: 'Undertekst';
+color: #2a3743;
+padding: 4px;
+}
+
+.sell {
+background-color: #c6783a;
+color: white;
+font-size: 14px;
+padding: 6px;
+text-align: center;
+width: 120px; 
+font-family: 'Grundfos';
+margin: 0 auto;
+border: 1px solid #c6783a;
+text-transform: uppercase;
+}
+
+.sell:hover {
+background-color: white;
+color: #c6783a;
+}
+
+.btn-sell{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0rem 1.5rem 0rem;
+}
+
+.container_second {
+display: flex;
+width: 100%;
+flex-direction: row;
+flex-wrap: nowrap;
+flex-flow: row wrap;
+text-align: center;
+justify-content: center;
+}
+
+.flex_second {
+margin: 10px;
+padding: 10px;
+}
+
+.flex_second img {
+width: 120px;
+}
+
+.flex_second:hover {
+background: #88a8ce75;
+}
+
+.flex_second p {
+font-family: 'Undertekst';
+color: #2a3743;
+font-size: 14px;
+}
+
+/*---------------------------------------------------------
+                          Error
+---------------------------------------------------------*/
+.error {
+text-align: center;
+margin-bottom: 20px;
+margin-top: 40px;
+padding-top: 4rem;
+}
+
+.error h1 {
+font-family: 'Grundfos';
+color: #c6783a;
+padding: 10px;
+padding-bottom: 2rems;
+}
+
+.error p {
+font-family: 'Undertekst';
+color: #2a3743;
+padding: 15px;
+background-color: #dde7f3;
+width: 80%;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+.error a {
+color: #2a3743;
+}
+
+.error a:hover {
+color: #c6783a;
+}
+
+.error img {
+width: 80%;
+display: block;
+margin: 0 auto;
+padding: 30px;
+}
+
+
+/*---------------------------------------------------------
+                          Footer
+---------------------------------------------------------*/
+
+
+footer {
+  background-color: #c6783a;
+  color: white;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+
+}
+
+.footer-content p a{
+  color: white;
+}
+
+.footer-content h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+.footer-content address {
+  font-size: 0.8em;
+  font-style: normal;
+  line-height: 2em;
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+.footer-content > section > p {
+  font-size: 0.8em;
+  line-height: 2em;
+  margin-bottom: 2em;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-socials{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials a {
+  flex-direction: column;
+  color: white;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.maps-container{
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.fab{
+  font-size: 30px;
+}
+
+/*---------------------------------------------------------
+                          Media Querys 
+---------------------------------------------------------*/
+
+
+@media screen and (max-width: 900px) {
+  .burger {
+    display: block;
+  }
+
+  .hide{
+      display: block;
+  }
+
+  .hide-login{
+      display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0;
+    height: 101vh;
+    width: 100%;
+    top: -1vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c6783a;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links-color{
+    position: fixed;
+    right: 0;
+    height: 101vh;
+    width: 100%;
+    top: -1vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c6783a;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+  
+}
+
+
+@media screen and (min-width: 800px){
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer-content section {
+    width: 50%;
+}
+
+.footer-content > section:nth-child(2) {
+    order: 1;
+}
+
+.footer-content > div {
+    order: 2;
+    align-self: center;
+}
+
+.footer-content > section:first-child {
+    order: 3;
+}  
+
+.footer-content img {
+    order: 3;
+    margin: 1em 0 0 0;
+    max-height: 4em; 
+}
+
+
+.skyer img{
+  display: none;
+}
+
+
+.bygning img{
+  display: none;
+ 
+}
+
+.hero-computer img{
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: blur(3px);
+}
+
+.hero_underside img {
+  width: 75%;  
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.flex_underside p{
+  margin: 0 5rem 0rem 5rem;
+  width: 75%;
+  margin:  0 auto;
+}
+
+.liv_img{
+  width: 75%;
+  display: block;
+  margin:  0 auto;
+}
+
+.error img{
+  width: 50%;
+  display: block;
+}
+
+.flex_img{
+  width: 50%;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1100px){
+  .card-container{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .second_intro p{
+    padding: 0rem 5rem 0rem 5rem;
+  }
+}
+
+@keyframes fadeUp { 
+  0%{
+      transform: translateY(2rem);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0rem);
+  }
+}

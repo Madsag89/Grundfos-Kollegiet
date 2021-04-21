@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Log ind | Grundfos Kollegiet</title>
+    <!-- Tubular -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://www.seanmccambridge.com/tubular/js/jquery.tubular.1.0.js"></script> 
+  </head>
+  <body>
+
+    <main>
+      <div class="video"></div>
+        <div id="wrapper" class="clearfix"></div>
+      </div>
+    </main>
+
+    <script>
+         setTimeout(function () {
+        location.href = "velkommen.html";
+    }, 4000);
+
+    $('document').ready(function() {
+	var options = { videoId: '7z9rdW7E9co', start: 0 };
+	$('#wrapper').tubular(options);
+});
+</script>
+</body>
+</html>
